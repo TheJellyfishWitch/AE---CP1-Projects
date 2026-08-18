@@ -8,7 +8,7 @@
 
 
 # output
-print("good morning") # this is an output, every thing after is a comment
+print("good morning") # every thing after is a comment
                   # ^ indicated action
         # ^ output for user
 # ^ keyword for output
