@@ -17,7 +17,7 @@ print("COLONIST: Correct, although the crew and I are not currently settled in y
 time.sleep(2)
 print("INTERVIEWER: Perfect, we'll just ask you a few questions, we won't take much time. First where is that space colony located?")
 time.sleep(4)
-print("COLONIST: Venus")
+print("COLONIST: ", where_from)
 time.sleep(1)
 print("INTERVIEWER: Ooh, thats an intersting place to live! What is your name?")
 time.sleep(2)
