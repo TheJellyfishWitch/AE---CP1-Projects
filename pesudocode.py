@@ -41,6 +41,8 @@
         # print("Okay...either your planet moves really slowly, or your a baby...either one is bad...")
     # else
         # print("Cool.")
+    
+# if this code dosen't work don't worry i'll fix it later :)
 
 
 """variables (these are just the variables, also listed above)"""
