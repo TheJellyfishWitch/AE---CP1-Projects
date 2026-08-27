@@ -19,7 +19,7 @@ color = input("What is your favorite color? ").lower()
 
 time.sleep(1)
 
-# color question response
+# color question response 
 if "green" in color or "purple" in color:
     print(f"{color} is my fav too!")
 elif "pink" in color:
