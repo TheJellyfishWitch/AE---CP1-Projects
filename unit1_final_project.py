@@ -57,7 +57,7 @@ while True:
         age = int(input("How old are you on your home planet?? "))
         time.sleep(1)
     except:
-        print("Thats not a number!")
+        print("That's not a number!")
     else:
         break
 
@@ -65,11 +65,11 @@ time.sleep(1)
 
 # age question response
 if age >= 102:
-    print("WOAH! Okay grandpa! Does your home planet just move really fast? Either way on Earth your an adult...")
+    print("WOAH! Okay grandpa! Does your home planet just move really fast? Either way on Earth you're an adult...")
 elif age >= 18:
-    print("On Earth you are concidered an adult.")
+    print("On Earth you are considered an adult.")
 elif age <= 5:
-    print("Okay...either your planet moves really slowly or your a baby...both of which are concerning...")
+    print("Okay...either your planet moves really slowly or you're a baby...both of which are concerning...")
 else:
     print("Cool.")
 
@@ -79,7 +79,7 @@ time.sleep(3)
 
 # hobby question
 while True:
-    hobby = input("Do you have a hobby that you like to do in your free time? ").strip().lower()
+    hobby = input("What is a hobby that you like to do in your free time? ").strip().lower()
 
     time.sleep(1)
 
@@ -102,17 +102,17 @@ time.sleep(2)
 
 
 # planet residence question
-planet = input("What planet do you live on? Prefreably in our known solar system, intergalactic and interstellar residencies can get complex: ").capitalize()
+planet = input("What planet do you live on? Preferably in our known solar system, intergalactic and interstellar residencies can get complex: ").capitalize()
 
 time.sleep(1)
 
 # planet residence question response
 if "Earth" in planet:
-    print("So your human right? If not why do you live there?")
+    print("So you're human, right? If not, why do you live there?")
 elif "Pluto" in planet:
     print("Same!!")
 else:
-    print(f"{planet} is quite nice, I've visited before but only seen the most toristy places.")
+    print(f"{planet} is quite nice, I've visited before but only seen the most touristy places.")
 
 time.sleep(2)
 
@@ -131,7 +131,7 @@ if "jupiter" in planet:
 elif "mars" in planet or "neptune" in planet or "uranus" in planet:
     print(f"Is it cold there? I've heard {fav_place} is nice though, guess I'll have to visit!")
 else:
-    print(f"Ahhh, yes, I've seen {fav_place} its also one of my faves.")
+    print(f"Ahhh, yes, I've seen {fav_place} it's also one of my faves.")
 
 time.sleep(3)
 
@@ -147,7 +147,7 @@ else:
 
 
 # final output | all together
-print(f"Very nice, so your {name} and you are {age} years old and you live on {planet} and like to {hobby_verb} and like {color} right? If thats not exactally who you are theres nothing I can do.")
+print(f"Very nice, so your {name} and you are {age} years old and you live on {planet} and like to {hobby_verb} and like {color} right? If that's not exactly who you are there's nothing I can do.")
 
 time.sleep(1)
 
