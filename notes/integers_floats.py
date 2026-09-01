@@ -16,3 +16,13 @@ print(10%3)
 print(15%5)
 
 # pemmdas (modulo included)
+
+# you can like use assignement operators to change a variable :)
+
+# converting data types
+fav = float(input("What is ur fav number??: "))
+
+print(f"{fav**2} is {fav} squared!")
+print(round(num,6))
+print(int(pi))
+
