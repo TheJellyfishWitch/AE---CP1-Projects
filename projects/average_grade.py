@@ -69,4 +69,5 @@ while True:
 
 average = (grade_one + grade_two + grade_three + grade_four + grade_six + grade_five + grade_seven) / 7
 
-print(f"Your average grade is {average}!")
+
+print(f"Your average grade is {average:.2f}!")
