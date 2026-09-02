@@ -2,45 +2,35 @@
 
 import time
 
-# input variables
-user_name = input("Enter your name: ").capitalize()
+print("Space Shuttle")
+time.sleep(3)
+
+country = input("Enter a country: ")
+noun = input("Enter a noun: ")
 name = input("Enter a name: ").capitalize()
-room = input("Enter a room: ").lower()
-place = input("Enter a place: ").capitalize()
-judge = input("Enter a name: ").capitalize()
-food = input("Enter a food: ").lower()
-ingrediant = input("Enter an ingrediant: ").lower().lower()
-verb_ing = input("Enter a verb ending in 'ing': ").lower()
-verb_two = input("Enter a verb: ").lower()
-country = input("Enter a country [ex: british, greek]: ").capitalize()
-meat = input("Enter a form of meat: ").lower()
-veggie = input("Enter a vegatable: ").lower()
-while True:
-    try:
-        number = int(input("Enter a number: "))
-    except:
-        print("thats not a number!!")
-    else:
-        break
-adjective = input("Enter a adjective: ").lower()
-verb_four = input("Enter a verb: ").lower()
+plural_noun = input("Enter a plural noun: ")
+verb_ing = input("Enter a verb ending in \"ing\": ")
+city = input("Enter a city: ")
+plural_noun_two = input("Enter a plural noun: ")
+adjective = input("Enter a adjective: ")
+noun_two = input("Enter a noun: ")
+number = input("Enter a number: ")
+number_two = input("Enter a number: ")
+noun_three = input("Enter a noun: ")
+planet = input("Enter a planet: ")
+adjective_two = input("Enter a adjective: ")
+verb = input("Enter a verb: ")
+verb_two = input("Enter a verb: ")
+verb_ing_two = input("Enter a verb ending in \"ing\": ")
+adverb = input("Enter a adverb: ")
+adjective_three = input("Enter a adjective: ")
+plural_noun_three = input("Enter a plural noun: ")
+verb_three = input("Enter a country: ")
 
-# final statment
-print(f"Welcome back to the annual cooking competition final round, this years round we have {user_name} vs. {name}!")
+print(f"In 2026 the {country} launched the first real space {noun}. It was named {name} and was piloted by two brave {plural_noun}.")
 time.sleep(3)
-print(f"This years game is hosted in {room} of {place}, our judge is {judge}.")
-time.sleep(2)
-print(f"'Hello, hello! Today our contestants will be making {food} with our special ingrediant: {ingrediant}!'")
-time.sleep(3)
-print(f"You all have {number} of hours, begin!' You and {name} get to work, you start by {verb_ing} to grab your pot.")
-time.sleep(5)
-print(f"Looking over {name} {verb_two} a bowl and starts to cook.")
-time.sleep(2)
-print(f"You and {name} started adding {country} {meat}, you also added some {veggie} and the {ingrediant}.")
-time.sleep(3)
-print(f"'Alright contestants, your time is up!' {judge} said, {judge} tried your dish first. {judge} replies with 'your dish is very {adjective}'. Then {judge} tried {name}'s dish, 'This is incredible, it's {verb_four}' {judge} said smiling.")
-time.sleep(8)
-print(f"'Drum roll please, {name} wins!!'")
-time.sleep(2)
-print("You lost :(")
+print(f"They had practiced {verb_ing} for two years and were expert {plural_noun_three}. {name} took off from {city} using its powerful {plural_noun_two} and soared off into the {adjective} blue {noun_two}.")
+time.sleep(4)
+print(f"For those watching from {planet} it was a/an {adjective_three} sight to {verb_two}! Who could really {verb_three} that there were tow")
 
+#for people watching from PLANET it was a/an ADJECTIVE sight to VERB! who could really VERB that there were two PLURAL NOUN in space? it was mind VERB ENDING IN ING. after NUMBER orbits the shuttle landed ADVERB back at PLANET. it was a/an ADJECTIVE day for the COUNTRY space program.
