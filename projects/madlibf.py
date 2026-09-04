@@ -2,9 +2,10 @@
 
 import time
 
-print("Space Shuttle")
-time.sleep(3)
+print("Title: Space Shuttle")
+time.sleep(2)
 
+# madlib inputs
 country = input("Enter a country: ")
 noun = input("Enter a noun: ")
 name = input("Enter a name: ").capitalize()
@@ -25,12 +26,15 @@ verb_ing_two = input("Enter a verb ending in \"ing\": ")
 adverb = input("Enter a adverb: ")
 adjective_three = input("Enter a adjective: ")
 plural_noun_three = input("Enter a plural noun: ")
-verb_three = input("Enter a country: ")
+verb_three = input("Enter a verb: ")
 
+# madlib outputs
 print(f"In 2026 the {country} launched the first real space {noun}. It was named {name} and was piloted by two brave {plural_noun}.")
 time.sleep(3)
 print(f"They had practiced {verb_ing} for two years and were expert {plural_noun_three}. {name} took off from {city} using its powerful {plural_noun_two} and soared off into the {adjective} blue {noun_two}.")
 time.sleep(4)
-print(f"For those watching from {planet} it was a/an {adjective_three} sight to {verb_two}! Who could really {verb_three} that there were tow")
-
-#for people watching from PLANET it was a/an ADJECTIVE sight to VERB! who could really VERB that there were two PLURAL NOUN in space? it was mind VERB ENDING IN ING. after NUMBER orbits the shuttle landed ADVERB back at PLANET. it was a/an ADJECTIVE day for the COUNTRY space program.
+print(f"For those watching from {planet} it was a/an {adjective_three} sight to {verb_two}! Who could really {verb_three} that there were two {plural_noun} in space? It was mind {verb_ing_two}.")
+time.sleep(3)
+print(f"After {number_two} orbits the shittle landed {adverb} back on {planet}, it was a/an {adjective_three} day for the {country} space program.")
+time.sleep(3)
+print("Thank you for doing my madlib :)")
