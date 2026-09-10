@@ -3,12 +3,12 @@
 import random
 import time
 
-accpeted_dice = ["D4", "4", "D6", "6", "D8", "8", "D10", "10", "D12", "12", "D20", "20"]
+accpeted_dice = ["D4", "4", "D6", "6", "D8", "8", "D10", "10", "D12", "12", "D20", "20", "D100", "100"]
 
 while True:
     # get type of dice
     while True: 
-        choice_of_dice = input("Which dice would you like to roll? [D4, D6, D8, D10, D12, D20]: ").upper().strip()
+        choice_of_dice = input("Which dice would you like to roll? [D4, D6, D8, D10, D12, D20, D100]: ").upper().strip()
         if choice_of_dice in accpeted_dice:
             break
         else:
@@ -65,6 +65,12 @@ while True:
         time.sleep(1.5)
         for i in range(number_of_dice):
             print(f"Die #{i+1} rolled a {random.randint(1,20)}")
+            time.sleep(1.5)
+    elif choice_of_dice == "D100" or choice_of_dice == "100":
+        print(f"Rolling {number_of_dice} D100(s)...")
+        time.sleep(1.5)
+        for i in range(number_of_dice):
+            print(f"Die #{i+1} rolled a {random.randint(1,100)}")
             time.sleep(1.5)
     else:
         print("That is not a dice that is accepted, try again")
