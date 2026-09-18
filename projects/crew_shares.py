@@ -3,22 +3,19 @@
 import random
 import time
 
-name_pirates = []
-
 while True:
     try:
         number_pirates = int(input("How many pirates are there? "))
+        break
     except:
         print("That is not a number, try again")
-    else:
-        break
 
 number = 0
 
-while True:
-    if number_pirates >= number:
-        for i in range(number_pirates):
-            name_pirates = input(f"What is the name of pirate #{i+1}? ")
+name_pirates = []
+
+for i in range(number_pirates):
+    name_pirates = input(f"What is the name of pirate #{i+1}? ")
         number += 1
     else:
         break
