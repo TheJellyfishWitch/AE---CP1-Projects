@@ -71,10 +71,16 @@ guessed_letters = []
 incorrect = 0
 lives = 6
 
+guess = input("Guess a letter: ").lower()
+
+if guess in guessing_word:
+    print("That letter is in the word")
+    guessed_letters.app
+
 if incorrect == "5":
     want_hint = input("Do you wnat a hint [YES / NO]? ").lower()
-    if want_hint == "yes" or want_hint = "y":
-        
+    if want_hint == "yes" or want_hint == "y":
+        print("Hello")
 while True:
     for word in words:
         print("What is your first letter? ")
