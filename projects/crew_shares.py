@@ -5,7 +5,7 @@ import time
 
 while True:
     try:
-        number_pirates = int(input("How many pirates are there? "))
+        number_pirates = int(input("How many pirate(s) are there? "))
         break
     except:
         print("That is not a number, try again")
@@ -15,10 +15,8 @@ number = 0
 name_pirates = []
 
 for i in range(number_pirates):
-    name_pirates = input(f"What is the name of pirate #{i+1}? ")
-        number += 1
-    else:
-        break
+    name_pirates.append(input(f"What is the name of pirate #{i+1}? ").title())
+    number += 1
 
 number_pirates_w_other = number_pirates + 2 
 
@@ -38,5 +36,6 @@ print(f"Yondu's share: {yondu:.2f}")
 time.sleep(1.5)
 print(f"Peter's share: {peter:.2f}")
 time.sleep(1.5)
-print(f"Crew's share: {crew:.2f}")
-time.sleep(1.5)
+for name in name_pirates:
+    print(f"{name}'s share: {crew:.2f}")
+    time.sleep(1.5)
