@@ -88,11 +88,7 @@ while True:
             incorrect += 1
             lives -= 1
 
-        if incorrect == 5:
-            want_hint = input("Do you wnat a hint [YES / NO]? ").lower()
-            if want_hint == "yes" or want_hint == "y":
-                print(f"Hint: the word has {len(guessing_word)} letters")
-                time.sleep(1.5)
+        
 
         player_won = True
         for letter in guessing_word:
@@ -108,6 +104,12 @@ while True:
             print(f"Game over! The word was {guessing_word}")
             break
 
+        if incorrect == 5:
+                    want_hint = input("Do you wnat a hint [YES / NO]? ").lower()
+                    if want_hint == "yes" or want_hint == "y":
+                        print(f"Hint: the word has {len(guessing_word)} letters")
+                        time.sleep(1.5)
+        
     again = input("Would you like to play again [YES / NO]? ")
     if again == "no" or again == "n":
         break
