@@ -26,3 +26,9 @@ print(f"{fav**2} is {fav} squared!")
 print(round(num,6))
 print(int(pi))
 
+one = 7 // 2
+two = 7 % 2
+three = 2 ** 3
+four = 10 / 4
+
+print(f"{one}, {two}, {three}, {four}")
