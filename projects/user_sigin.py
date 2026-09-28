@@ -19,14 +19,17 @@ while tries < max_tries:
     renter_pass = input("Renter password: ")
 
     # if it was incorrect, renter and then add 1 to tries
-    if renter_pass_check == False:
-        print("Your password is incorrect, renter")
+    if renter_pass == passes[0]:
+        print("Password confirmed")
+        break
+    else:
         tries =+ 1
-
-    # invalid log in information, signed out
-    if tries == 3:
-        print("You have run out of tries")
-        # go out of code
+        remaining = max_tries - tries
+        if remaining > 0:
+            print(f"You have {remaining} tries left")
+        else:
+            print("You have no more tries :(")
+            exit()
 
 # sign in with info
 print("Now that your information has been inputed, renter to signin")
@@ -45,3 +48,18 @@ else:
 
 if usercheck and passcheck == True:
     print("Valid log in, signing in")
+
+    # Sign in with info
+print("Now that your information has been inputed, renter to signin")
+username = input("Enter username: ")
+password = input("Enter password: ")
+
+# FIX 3: Verify that the password belongs to that specific user index
+if username in users:
+    user_index = users.index(username)
+    if password == passes[user_index]:
+        print("Successful log in, you are now signed in")
+    else:
+        print("Invalid password, try again")
+else:
+    print("Invalid username, try again")
