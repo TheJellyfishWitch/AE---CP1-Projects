@@ -2,6 +2,7 @@
 
 import random
 import time
+import os
 
 # LIST words to use
 # DISPLAY empty handman
@@ -14,6 +15,8 @@ import time
         # DISPLAY number of letters in word
 # GET if user want to play again
 
+def clear_terminal():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 words = ["joe", "croquet", "cockpit", "bungler", "melancholy", "lollygag", "flabbergast", "paradiddle", "peekaboo", "fjord", "jazzy", "gipsy", "polka", "sphinx", "swivel", "quicky", "ribbed", "catawampus", "snickerdoodle", "gummy", "discombobulate", "bumfuzzle", "jock", "hocky", "phlegm", "jigsaw", "klutz", "rythms", "pharaoh", "crypts", "queue", "jinx", "zephyr", "memento", "quizzes", "vortex", "whisky", "lynx", "klutz", "glyph", "quaff", "word"]
 stages = [
@@ -76,19 +79,19 @@ while True:
             print(f"You already guesses the letter {guess}, try again")
             time.sleep(1.5)
             continue
-
+        clear_terminal()
+            
         if guess in guessing_word:
             print("Correct")
             time.sleep(1.5)
             if guess not in guessed_letters:
                 guessed_letters.append(guess)
+            clear_terminal()
         else:
             print("Incorrect, try again")
             time.sleep(1.5)
             incorrect += 1
-            lives -= 1
-
-        
+            lives -= 1        
 
         player_won = True
         for letter in guessing_word:
@@ -103,13 +106,16 @@ while True:
             print(stages[incorrect])
             print(f"Game over! The word was {guessing_word}")
             break
+        clear_terminal()
 
         if incorrect == 5:
                     want_hint = input("Do you wnat a hint [YES / NO]? ").lower()
                     if want_hint == "yes" or want_hint == "y":
                         print(f"Hint: the word has {len(guessing_word)} letters")
                         time.sleep(1.5)
+                        clear_terminal()
         
     again = input("Would you like to play again [YES / NO]? ")
     if again == "no" or again == "n":
         break
+    clear_terminal()
