@@ -13,9 +13,3 @@
     # 5 × 4 × 3 × 2 × 1 = 120
     # What number do you want the factorial of: 0
     # 0 = 1
-
-factorial_numbers = []
-
-factorial_numbers.append(input("What number do you want to factor? "))
-
-for i in factorial_numbers
