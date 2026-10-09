@@ -10,21 +10,30 @@ import math
 
 # sample
     # What number do you want the factorial of: 5
-    # 5 × 4 × 3 × 2 × 1 = 120
+    # 5 × 4 × 3 × 2 × 1 = 120 (how a factor works)
+    # OUTPUT [numbers wanted to factor]
+    # OUTPUT [numbers factored]
     # What number do you want the factorial of: 0
-    # 0 = 1
+    # OUTPUT [0]
+    # OUTPUT [1]
 
 numbers = []
 
-numbers_factored = []
+numbers_factored = list(map(math.factorial, numbers))
 
 while True:
     try:
         numbers.append(int(input("What number would you like to factor? ")))
+        if numbers >= 0:
+            break
+        else:
+            print("That is not a number accepted, try again")
     except:
         print("That is not a number accepted, try again")
     else:
         break
+
+
 
 while True:
     another_number = input("Would you like to factor another number? [YES / NO] ").strip().lower()
@@ -33,15 +42,16 @@ while True:
         while True:
             try:
                 numbers.append(int(input("What number would you like to factor? ")))
+                if numbers >= 0:
+                    break
+                else:
+                    print("That is not a number accepted, try again")
             except:
                 print("That is not a number accepted, try again")
             else:
                 break
     else:
         break
-
-for i in numbers:
-    numbers_factored.append((math.factorial(i)))
 
 print(f"Here are your number(s) before being factored: {numbers}")
 
