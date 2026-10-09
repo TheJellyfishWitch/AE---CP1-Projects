@@ -19,12 +19,11 @@ import math
 
 numbers = []
 
-numbers_factored = list(map(math.factorial, numbers))
-
 while True:
     try:
-        numbers.append(int(input("What number would you like to factor? ")))
-        if numbers >= 0:
+        number_input = int(input("What number would you like to factor? "))
+        if number_input >= 0:
+            numbers.append(number_input)
             break
         else:
             print("That is not a number accepted, try again")
@@ -41,8 +40,9 @@ while True:
     if another_number == "yes" or another_number == "y":
         while True:
             try:
-                numbers.append(int(input("What number would you like to factor? ")))
-                if numbers >= 0:
+                number_input = int(input("What number would you like to factor? "))
+                if number_input >= 0:
+                    numbers.append(number_input)
                     break
                 else:
                     print("That is not a number accepted, try again")
@@ -52,6 +52,8 @@ while True:
                 break
     else:
         break
+
+numbers_factored = list(map(math.factorial, numbers))
 
 print(f"Here are your number(s) before being factored: {numbers}")
 
