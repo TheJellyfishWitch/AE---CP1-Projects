@@ -2,6 +2,10 @@
 
 import random
 import time
+import os
+
+def clear_terminal():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 # OUTPUT info
 # OUTPUT key elements
@@ -43,7 +47,10 @@ import time
     # OUTPUT hehe your stuck forever!!
     # break / exit code
 
-codes_bookshelf = [2356, 9990, 8031, 6574, 8383, 3333, 6753, 6994, 9393, 676767676767]
+codes = [2356, 9990, 8031, 6574, 8383, 3333, 6753, 6994, 9393, 676767676767]
+
+codes_bookshelf = [24022]
+
 
 coins_codes = [7151, 5890, 3373, 1643, 6869]
 
@@ -57,6 +64,8 @@ print("You have infinite time but only 3 tries to enter the correct code and get
 time.sleep(4)
 print("Good luck")
 time.sleep(1)
+
+clear_terminal()
 
 print("You are in a room, this room is mostly bare exept for a old rotary phone where you will enter the code to escape")
 
@@ -75,6 +84,8 @@ time.sleep(1)
 
 # while True loop
 choice = input("What would you like to examine? [COINS / CARPET / BOOKSHELF / PAPERS / PHONE] ").strip().lower()
+
+clear_terminal()
 
 if choice == "coins":
     print("As you approach the box of coins it bursts open, coins flying everywhere")
@@ -114,10 +125,84 @@ elif choice == "carpet":
     print("")
 elif choice == "bookshelf":
     print("You pick up one of the books titiled \"A Cristmas Carol\"")
+    time.sleep(1)
     read_cc = input("Would you like to read it? [YES / NO] ").strip().lower()
     if read_cc == "yes" or read_cc == "y":
         print("Title: A Christmas Carol")
+        time.sleep(1)
         print("Author: Charles Dickens")
-        print("Release date: December 24, 2007 [eBook #24022]")
-        print("    Most recently updated: August 9, 2012")
+        time.sleep(1)
+        print("Release date: December, Twenty-Fourth, Two-thousand-seven [eBook #24022]")
+        time.sleep(1)
+        print("[Most recently updated: August, Ninth, Twenty-Twelve]")
+        time.sleep(1)
+        print("Language: English")
+        time.sleep(1)
+        print("Origional publication: Philadelphia and New York: J. B. Lippincott Company,, Ninteen-Fifteen")
+        time.sleep(3)
+        print("Credits: Produced by Suzanne Shell, Janet Blenkinship and the Online")
+        time.sleep(2)
+        print("Link to eBook: https://www.gutenberg.org/files/46/46-h/46-h.htm")
+        time.sleep(2)
+
+        clear_terminal()
+
+        print("PREFACE")
+        time.sleep(1)
+        print("I have endeavoured in this Ghostly little book to raise the Ghost of an Idea which shall not put my readers out of humour with themselves, with each other, with the season, or with me. May it haunt their house pleasantly, and no one wish to lay it.\n"
+        "Their faithful Friend and Servant,\n"
+        "C. D.\n" 
+        "December, Eighteen-Fourty-three.")
+        time.sleep(9)
+
+        clear_terminal()
+
+        print("CHARACTERS")
+        time.sleep(1)
+        print("Bob Cratchit, clerk to Ebenezer Scrooge.\n"
+        "Peter Cratchit, a son of the preceding.\n"
+        "Tim Cratchit (\"Tiny Tim\"), a cripple, youngest son of Bob Cratchit.\n"
+        "Mr. Fezziwig, a kind-hearted, jovial old merchant.\n"
+        "Fred, Scrooge's nephew.\n"
+        "Ghost of Christmas Past, a phantom showing things past.\n"
+        "Ghost of Christmas Present, a spirit of a kind, generous, and hearty nature.\n"
+        "Ghost of Christmas Yet to Come, an apparition showing the shadows of things which yet may happen.\n"
+        "Ghost of Jacob Marley, a spectre of Scrooge's former partner in business.\n"
+        "Joe, a marine-store dealer and receiver of stolen goods.\n"
+        "Ebenezer Scrooge, a grasping, covetous old man, the surviving partner of the firm of Scrooge and Marley.\n"
+        "Mr. Topper, a bachelor.\n"
+        "Dick Wilkins, a fellow apprentice of Scrooge's.\n"
+        "\n"
+        "Belle, a comely matron, an old sweetheart of Scrooge's.\n"
+        "Caroline, wife of one of Scrooge's debtors.\n"
+        "Mrs. Cratchit, wife of Bob Cratchit.\n"
+        "Belinda and Martha Cratchit, daughters of the preceding.\n"
+        "\n"
+        "Mrs. Dilber, a laundress.\n"
+        "Fan, the sister of Scrooge.\n"
+        "Mrs. Fezziwig, the worthy partner of Mr. Fezziwig.")
+        time.sleep(14)
+
+        clear_terminal()
+
+        print("CONTENTS")
+        time.sleep(1)
+        print("STAVE ONE- Marley's Ghost")
+        time.sleep(1)
+        print("STAVE TWO - The First of the Three Spirits")
+        time.sleep(1)
+        print("STAVE THREE - The Second of the Three Spirits")
+        time.sleep(1)
+        print("STAVE FOUR - The Last of the Spirits")
+        time.sleep(1)
+        print("STAVE FIVE - The End of It")
+        time.sleep(1)
+
+        clear_terminal()
+
+        print("---------------")
+        print("   STAVE ONE")
+        print("---------------")
+
     elif read_cc == "no" or read_cc == "n":
+        print("")
