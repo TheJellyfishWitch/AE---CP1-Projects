@@ -4,6 +4,9 @@ import random
 import time
 import os
 
+# I have some code that I need help on, all of the comments is where I need help, I don't really know anything past this level that I'm coding at so don't go above and make sure that everything words, I will maybe be changing things so just keep things simple and clean, don't change any code that I already have:
+
+
 def clear_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -51,7 +54,7 @@ codes = [2356, 9990, 8031, 6574, 8383, 3333, 6753, 6994, 9393, 676767676767]
 
 codes_bookshelf = [24022]
 
-coins_codes = [7151, 5890, 3373, 1643, 6869]
+coins_codes = [7151, 5890, 3373, 1643]
 
 carpet_codes = [200601, 288060, 356083, 555556, 676767]
 
@@ -109,11 +112,115 @@ if choice == "coins":
         random_coin_code = random.choice(coins_codes)
 
         if random_coin_code == 7151:
-             
+            print("")
+            quarters = 13874
+            # ($3,468.50)
+            dimes = 16375
+            # ($1,637.50)
+            nickles = 18847
+            # ($942.35)
+            pennies = 110295
+            # ($1,102.65)
+            for i in quarters:
+                print(i)
+                time.sleep(0.2)
+            print(f"{quarters} in total")
+            for i in quarters:
+                print(i)
+                time.sleep(0.2)
+            print(f"{quarters} in total")
+            for i in quarters:
+                print(i)
+                time.sleep(0.2)
+            print(f"{quarters} in total")
+            for i in quarters:
+                print(i)
+                time.sleep(0.2)
+            print(f"{quarters} in total")
+        elif random_coin_code == 5890:
+            print("")
+            quarters_second = 8416
+            # ($2,104.00)
+            dimes_second = 12307
+            # ($1,230.70)
+            nickles_second = 9585
+            # ($479.25)
+            pennies_second = 207605
+            # ($2,076.05)
+            for i in quarters_second:
+                print(i)
+                time.sleep(0.2)
+            print(f"{quarters_second} in total")
+            for i in dimes_second:
+                print(i)
+                time.sleep(0.2)
+            print(f"{dimes_second} in total")
+            for i in nickles_second:
+                print(i)
+                time.sleep(0.2)
+            print(f"{nickles_second} in total")
+            for i in pennies_second:
+                print(i)
+                time.sleep(0.2)
+            print(f"{spennies_second} in total")
+        elif random_coin_code == 3373:
+            print("")
+            quarters_thrid = 9329
+            # ($2,332.25)
+            dimes_thrid = 4181
+            # ($418.10)
+            nickles_thrid = 8027
+            # ($401.35)
+            pennies_thrid = 22130
+            # ($221.30)
+            for i in quarters:
+                print(i)
+                time.sleep(0.2)
+            print(f"{quarters} in total")
+            for i in quarters:
+                print(i)
+                time.sleep(0.2)
+            print(f"{quarters} in total")
+            for i in quarters:
+                print(i)
+                time.sleep(0.2)
+            print(f"{quarters} in total")
+            for i in quarters:
+                print(i)
+                time.sleep(0.2)
+            print(f"{quarters} in total")
+        elif random_coin_code == 1643:
+            print("")
+            quarters_fourth = 3272
+            # ($818.00)
+            dimes_fourth = 3440
+            # ($344.00)
+            nickles_fourth = 4810
+            # ($240.50)
+            pennies_fourth = 24050
+            # ($240.50)
+            for i in quarters:
+                print(i)
+                time.sleep(0.2)
+            print(f"{quarters} in total")
+            for i in quarters:
+                print(i)
+                time.sleep(0.2)
+            print(f"{quarters} in total")
+            for i in quarters:
+                print(i)
+                time.sleep(0.2)
+            print(f"{quarters} in total")
+            for i in quarters:
+                print(i)
+                time.sleep(0.2)
+            print(f"{quarters} in total")
+        else:
+            print("random_coin_code is not working")
 
+        
         # for loop counting each individual coin, quarter, penny etc.
-        # randomize number of each to equal one of the codes above for coins_codes
-        # have user add all the dollars together to get code
+        # have user add all the dollars together to get code, make it hinted but without revealing that that is how you get the code
     else:
         print("No, that is not one of the choices")
         time.sleep(.5)
