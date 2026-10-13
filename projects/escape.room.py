@@ -48,15 +48,15 @@ def clear_terminal():
     # OUTPUT hehe your stuck forever!!
     # break / exit code
 
-codes = [2356, 9990, 8031, 6574, 8383, 3333, 6753, 6994, 9393, 676767676767]
+codes = ["2356", "9990", "8031", "6574", "8383", "3333", "6753", "6994", "9393", "676767676767"]
 
-codes_bookshelf = [24022]
+codes_bookshelf = ["24022"]
 
-coins_codes = [7151, 5890, 3373, 1643]
+coins_codes = ["7151", "5890", "3373", "1643"]
 
-carpet_codes = [200601, 288060, 356083, 555556, 676767]
+carpet_codes = ["200601", "288060", "356083", "555556", "676767"]
 
-self_destruct_code_paper = [1001]
+self_destruct_code_paper = ["1001"]
 
 clear_terminal()
 
@@ -149,28 +149,18 @@ while True:
                     # ($1,102.65)
                     print("Counting pennies...")
                     while count_pennies < pennies:
-                        count_pennies += 2000
+                        count_pennies += 20000
                         if count_pennies > pennies: 
                             count_pennies = pennies
                         print(count_pennies)
-                    print(f"{pennies} in total")
-                    
+                    print(f"{pennies} in total")                
                 elif random_coin_code == 5890:
-                    nickles_second = 9585
-                    # ($479.25)
-                    pennies_second = 207605
-                    # ($2,076.05)
-                    for i in quarters_second:
-                        print(i)
-                        time.sleep(0.2)
-                    print(f"{quarters_second} in total")
-
                     quarters_second = 8416
                     count_quarters_second = 0
                     # ($2,104.00)
                     print("Counting quarters...")
                     while count_quarters_second < quarters_second:
-                        count_quarters_second += 2000
+                        count_quarters_second += 1000
                         if count_quarters_second > quarters_second: 
                             count_quarters_second = quarters_second
                         print(count_quarters_second)
@@ -181,269 +171,258 @@ while True:
                     count_dimes_second = 0
                     print("Counting dimes...")
                     while count_dimes_second < dimes_second:
-                        count_dimes_second += 2500
+                        count_dimes_second += 2000
                         if count_dimes_second > dimes_second: 
                             count_dimes_second = dimes_second
                         print(count_dimes_second)
                     print(f"{dimes_second} in total")
                     
-                    nickles = 18847
-                    count_nickles = 0
-                    # ($942.35)
+                    nickles_second = 9585
+                    count_nickles_second = 0
+                    # ($479.25)
                     print("Counting nickles...")
-                    while count_nickles < nickles:
-                        count_nickles += 3000
-                        if count_nickles > nickles: 
-                            count_nickles = nickles
-                        print(count_nickles)
-                    print(f"{nickles} in total")
+                    while count_nickles_second < nickles_second:
+                        count_nickles += 1000
+                        if count_nickles_second > nickles_second: 
+                            count_nickles_second = nickles_second
+                        print(count_nickles_second)
+                    print(f"{nickles_second} in total")
 
-                    pennies = 110295
-                    count_pennies = 0
-                    # ($1,102.65)
+                    pennies_second = 207605
+                    count_pennies_second = 0
+                    # ($2,076.05)
                     print("Counting pennies...")
-                    while count_pennies < pennies:
-                        count_pennies += 2000
-                        if count_pennies > pennies: 
-                            count_pennies = pennies
-                        print(count_pennies)
-                    print(f"{pennies} in total")
-
+                    while count_pennies_second < pennies_second:
+                        count_pennies_second += 30000
+                        if count_pennies_second > pennies_second: 
+                            count_pennies_second = pennies_second
+                        print(count_pennies_second)
+                    print(f"{pennies_second} in total")
                 elif random_coin_code == 3373:
-                    print("")
                     quarters_third = 9329
                     count_quarters_third = 0
                     # ($2,332.25)
                     print("Counting quarters...")
                     while count_quarters_third < quarters_third:
-                        count_quarters_third += 2000
+                        count_quarters_third += 1000
                         if count_quarters_third > quarters_third: 
                             count_quarters_third = quarters_third
-                        print(count_quarters)
+                        print(count_quarters_third)
                     print(f"{quarters_third} in total")
 
-                    dimes_thrid = 4181
+                    dimes_third = 4181
                     # ($418.10)
-                    nickles_thrid = 8027
-                    # ($401.35)
-                    pennies_thrid = 22130
-                    # ($221.30)
-                    quarters = 13874
-                    count_quarters = 0
-                    # ($3,468.50)
-                    
-
-                    dimes = 16375
-                    count_dimes = 0
-                    # ($1,637.50)
+                    count_dimes_third = 0
                     print("Counting dimes...")
-                    while count_dimes < dimes:
-                        count_dimes += 2500
-                        if count_dimes > dimes: 
-                            count_dimes = dimes
-                        print(count_dimes)
-                    print(f"{dimes} in total")
+                    while count_dimes_third < dimes_third:
+                        count_dimes_third += 500
+                        if count_dimes_third > dimes_third: 
+                            count_dimes_third = dimes_third
+                        print(count_dimes_third)
+                    print(f"{dimes_third} in total")
                     
-                    nickles = 18847
-                    count_nickles = 0
-                    # ($942.35)
+                    nickles_third = 8027
+                    # ($401.35)
+                    count_nickles_third = 0
                     print("Counting nickles...")
-                    while count_nickles < nickles:
-                        count_nickles += 3000
-                        if count_nickles > nickles: 
-                            count_nickles = nickles
-                        print(count_nickles)
-                    print(f"{nickles} in total")
-
-                    pennies = 110295
-                    count_pennies = 0
-                    # ($1,102.65)
+                    while count_nickles_third < nickles_third:
+                        count_nickles_third += 3000
+                        if count_nickles_third > nickles_third: 
+                            count_nickles_third = nickles_third
+                        print(count_nickles_third)
+                    print(f"{nickles_third} in total")
+                    
+                    pennies_third = 22130
+                    # ($221.30)
+                    count_pennies_third = 0
                     print("Counting pennies...")
-                    while count_pennies < pennies:
-                        count_pennies += 2000
-                        if count_pennies > pennies: 
-                            count_pennies = pennies
-                        print(count_pennies)
-                    print(f"{pennies} in total")
+                    while count_pennies_third < pennies_third:
+                        count_pennies_third += 2000
+                        if count_pennies_third > pennies_third: 
+                            count_pennies_third = pennies_third
+                        print(count_pennies_third)
+                    print(f"{pennies_third} in total")
                 elif random_coin_code == 1643:
-                    print("")
                     quarters_fourth = 3272
+                    count_quarters_fourth = 0
                     # ($818.00)
-                    dimes_fourth = 3440
-                    # ($344.00)
-                    nickles_fourth = 4810
-                    # ($240.50)
-                    pennies_fourth = 24050
-                    # ($240.50)
-                    for i in quarters_fourth:
-                        print(i)
-                        time.sleep(0.2)
+                    print("Counting quarters...")
+                    while count_quarters_fourth < quarters_fourth:
+                        count_quarters_fourth += 1000
+                        if count_quarters_fourth > quarters_fourth: 
+                            count_quarters_fourth = quarters_fourth
+                        print(count_quarters_fourth)
                     print(f"{quarters_fourth} in total")
 
-                    for i in dimes_fourth:
-                        print(i)
-                        time.sleep(0.2)
+                    dimes_fourth = 3440
+                    # ($344.00)
+                    count_dimes_fourth = 0
+                    print("Counting dimes...")
+                    while count_dimes_fourth < dimes_fourth:
+                        count_dimes_fourth += 500
+                        if count_dimes_fourth > dimes_fourth: 
+                            count_dimes_fourth = dimes_fourth
+                        print(count_dimes_fourth)
                     print(f"{dimes_fourth} in total")
-
-                    for i in nickles_fourth:
-                        print(i)
-                        time.sleep(0.2)
+                    
+                    nickles_fourth = 4810
+                    # ($240.50)
+                    count_nickles_fourth = 0
+                    print("Counting nickles...")
+                    while count_nickles_fourth < nickles_fourth:
+                        count_nickles_fourth += 3000
+                        if count_nickles_fourth > nickles_fourth: 
+                            count_nickles_fourth = nickles_fourth
+                        print(count_nickles_fourth)
                     print(f"{nickles_fourth} in total")
-
-                    for i in pennies_fourth:
-                        print(i)
-                        time.sleep(0.2)
+                    
+                    pennies_fourth = 24050
+                    # ($240.50)
+                    count_pennies_fourth = 0
+                    print("Counting pennies...")
+                    while count_pennies_fourth < pennies_fourth:
+                        count_pennies_fourth += 2000
+                        if count_pennies_fourth > pennies_fourth: 
+                            count_pennies_fourth = pennies_fourth
+                        print(count_pennies_fourth)
                     print(f"{pennies_fourth} in total")
                 else:
                     print("random_coin_code is not working")
-
-                
-                # for loop counting each individual coin, quarter, penny etc.
-                # have user add all the dollars together to get code, make it hinted but without revealing that that is how you get the code
             else:
                 print("No, that is not one of the choices")
                 time.sleep(.5)
-        
-        clear_terminal()
+        print("The amount of coins presented to you have been counted :)")
+        time.sleep(2)
+        print("Are you going to be adding them up to get the total amount of dollars?")
+        time.sleep(4)
 
         print("Now that you have finished counting the coins")
         time.sleep(1)
-        enter_code_question_coins = input("Would you like to enter a code into the phone? [YES / NO] ").lower().strip()
-        if enter_code_question_coins == "yes" or enter_code_question_coins == "y":
-            code_in_phone_coins = input("Are you sure you want to enter a code into the phone? [YES / NO] ").lower().strip()
-            if code_in_phone_coins == "yes" or code_in_phone_coins == "y":
-                print("Okay if your sure...")
-                clear_terminal()
-                tries_coins = 3
-                enter_code_coins = input("Enter the code to escape, you have three tries: ")
-                if enter_code_coins in codes or enter_code_coins in codes_bookshelf or enter_code_coins in carpet_codes or enter_code_coins in coins_codes:
-                    print("The phone begins to ring and you pick it up, a light and airy voice speaks:")
-                    time.sleep(2)
-                    print("\"You have entered the correct code to escape, congradulations!\"")
-                    time.sleep(4)
-                    print("Confetti goes everywhere :)")
-                    time.sleep(2)
-                    clear_terminal()
-                    print("GOOD JOB")
-                    exit()
-                elif enter_code_coins not in codes or enter_code_coins not in codes_bookshelf or enter_code_coins not in carpet_codes or enter_code_coins not in coins_codes:
-                        tries_coins -= 1
-                        print(f"You have {tries_coins} left to input the code correctly")
-                        # end back to enter_code_coins
-                        if tries_coins == 0:
-                            print("A deep voice answers the phone...")
-                            time.sleep(1)
-                            print("\"You have used all three tries to input the code correctly\"")
-                            time.sleep(2)
-                            print("\"You have FAILED!!\"")
-                            exit()
-                elif enter_code_coins in self_destruct_code_paper:
-                        print("The phone begins to ring and you pick it up, a deep voice speaks:")
-                        time.sleep(1)
-                        print("\"You have entered the self destruct code, now iniciating...\"")
-                        time.sleep(1)
-                        print("Three...")
-                        time.sleep(1)
-                        print("Two...")
-                        time.sleep(1)
-                        print("One...")
-                        time.sleep(3)
+        while True:
+            enter_code_question_coins = input("Would you like to enter a code into the phone? [YES / NO] ").lower().strip()
+            if enter_code_question_coins == "yes" or enter_code_question_coins == "y":
+                while True:
+                    code_in_phone_coins = input("Are you sure you want to enter a code into the phone? [YES / NO] ").lower().strip()
+                    if code_in_phone_coins == "yes" or code_in_phone_coins == "y":
+                        print("Okay if your sure...")
                         clear_terminal()
-                        print("You have failed the escape room,")
-                        time.sleep(1)
-                        print("and everything blows up")
-                        exit()
+                        tries_coins = 3
+                        while tries_coins > 0:
+                            enter_code_coins = input("Enter the code to escape, you have three tries: ")
+                            if enter_code_coins in codes or enter_code_coins in codes_bookshelf or enter_code_coins in carpet_codes or enter_code_coins in coins_codes:
+                                print("The phone begins to ring and you pick it up, a light and airy voice speaks:")
+                                time.sleep(2)
+                                print("\"You have entered the correct code to escape, congradulations!\"")
+                                time.sleep(4)
+                                print("Confetti goes everywhere :)")
+                                time.sleep(2)
+                                clear_terminal()
+                                print("GOOD JOB")
+                                exit()
+                            elif enter_code_coins in self_destruct_code_paper:
+                                print("The phone begins to ring and you pick it up, a deep voice speaks:")
+                                time.sleep(1)
+                                print("\"You have entered the self destruct code, now iniciating...\"")
+                                time.sleep(1)
+                                print("Three...")
+                                time.sleep(1)
+                                print("Two...")
+                                time.sleep(1)
+                                print("One...")
+                                time.sleep(3)
+                                clear_terminal()
+                                print("You have failed the escape room,")
+                                time.sleep(1)
+                                print("and everything blows up")
+                                exit()
+                            else:
+                                    tries_coins -= 1
+                                    print(f"You have {tries_coins} left to input the code correctly")
+                                    # end back to enter_code_coins
+                                    if tries_coins == 0:
+                                        print("A deep voice answers the phone...")
+                                        time.sleep(1)
+                                        print("\"You have used all three tries to input the code correctly\"")
+                                        time.sleep(2)
+                                        print("\"You have FAILED!!\"")
+                                        exit()
+                    elif code_in_phone_coins == "no" or code_in_phone_coins == "n":
+                        print("")
+                        break
                 else:
                     print("No, answer is not one of the options")
-                    # send to enter_code_coins
-            elif code_in_phone_coins == "no" or code_in_phone_coins == "n":
+                    # send back to code_in_phone_coins
+            elif enter_code_question_coins == "no" or enter_code_question_coins == "n":
                 print("")
-                # send back to choice
+                break
             else:
                 print("No, answer is not one of the options")
-                # send back to code_in_phone_coins
-        elif enter_code_question_coins == "no" or enter_code_question_coins == "n":
-            print("")
-            # send back up to choice
-        else:
-            print("No, answer is not one of the options")
-            # send back to enter-code_question_coins
     elif choice == "carpet":
-        # for every number between chosen code from carpet_codes print
-        # if number gets passed 500
-            # print("You are fallin asleep")
-            # IF user INPUTS wake up wake up!
-                # continue
-            # ELIF user does not and 2 seconds pass 
-                # restart counting & code
-            # ELSE
-                # restart counting & code
-    # always have user end up falling asleep, make it really hard
-        print("")
+        for i in range(0,50):
+            print(i)
+            time.sleep(0.2)
+        print("Your starting to fall asleep...")
         clear_terminal()
-
+        time.sleep(2)
         print("Now that you have finished counting the carpet")
         time.sleep(1)
-        enter_code_question_carpet = input("Would you like to enter a code into the phone? [YES / NO] ").lower().strip()
-        if enter_code_question_carpet == "yes" or enter_code_question_carpet == "y":
-            code_in_phone_carpet = input("Are you sure you want to enter a code into the phone? [YES / NO] ").lower().strip()
-            if code_in_phone_carpet == "yes" or code_in_phone_carpet == "y":
-                print("Okay if your sure...")
-                clear_terminal()
-                tries_carpet = 3
-                enter_code_carpet = input("Enter the code to escape, you have three tries: ")
-                if enter_code_carpet in codes or enter_code_carpet in codes_bookshelf or enter_code_carpet in carpet_codes or enter_code_carpet in coins_codes:
-                    print("The phone begins to ring and you pick it up, a light and airy voice speaks:")
-                    time.sleep(2)
-                    print("\"You have entered the correct code to escape, congradulations!\"")
-                    time.sleep(4)
-                    print("Confetti goes everywhere :)")
-                    time.sleep(2)
-                    clear_terminal()
-                    print("GOOD JOB")
-                    exit()
-                elif enter_code_carpet not in codes or enter_code_carpet not in codes_bookshelf or enter_code_carpet not in carpet_codes or enter_code_carpet not in coins_codes:
-                        tries_carpet -= 1
-                        print(f"You have {tries_carpet} left to input the code correctly")
-                        # end back to enter_code_carpet
-                        if tries_carpet == 0:
-                            print("A deep voice answers the phone...")
-                            time.sleep(1)
-                            print("\"You have used all three tries to input the code correctly\"")
-                            time.sleep(2)
-                            print("\"You have FAILED!!\"")
-                            exit()
-                elif enter_code_carpet in self_destruct_code_paper:
-                        print("The phone begins to ring and you pick it up, a deep voice speaks:")
-                        time.sleep(1)
-                        print("\"You have entered the self destruct code, now iniciating...\"")
-                        time.sleep(1)
-                        print("Three...")
-                        time.sleep(1)
-                        print("Two...")
-                        time.sleep(1)
-                        print("One...")
-                        time.sleep(3)
+        while True: 
+            enter_code_question_carpet = input("Would you like to enter a code into the phone? [YES / NO] ").lower().strip()
+            if enter_code_question_carpet == "yes" or enter_code_question_carpet == "y":
+                while True: 
+                    code_in_phone_carpet = input("Are you sure you want to enter a code into the phone? [YES / NO] ").lower().strip()
+                    if code_in_phone_carpet == "yes" or code_in_phone_carpet == "y":
+                        print("Okay if your sure...")
                         clear_terminal()
-                        print("You have failed the escape room,")
-                        time.sleep(1)
-                        print("and everything blows up")
-                        exit()
-                else:
-                    print("No, answer is not one of the options")
-                    # send to enter_code_carpet
-            elif code_in_phone_carpet == "no" or code_in_phone_carpet == "n":
+                        tries_carpet = 3
+                        while tries_carpet > 0:
+                            enter_code_carpet = input("Enter the code to escape, you have three tries: ")
+                            if enter_code_carpet in codes or enter_code_carpet in codes_bookshelf or enter_code_carpet in carpet_codes or enter_code_carpet in coins_codes:
+                                print("The phone begins to ring and you pick it up, a light and airy voice speaks:")
+                                time.sleep(2)
+                                print("\"You have entered the correct code to escape, congradulations!\"")
+                                time.sleep(4)
+                                print("Confetti goes everywhere :)")
+                                time.sleep(2)
+                                clear_terminal()
+                                print("GOOD JOB")
+                                exit()
+                            elif enter_code_carpet in self_destruct_code_paper:
+                                print("The phone begins to ring and you pick it up, a deep voice speaks:")
+                                time.sleep(1)
+                                print("\"You have entered the self destruct code, now iniciating...\"")
+                                time.sleep(1)
+                                print("Three...")
+                                time.sleep(1)
+                                print("Two...")
+                                time.sleep(1)
+                                print("One...")
+                                time.sleep(3)
+                                clear_terminal()
+                                print("You have failed the escape room,")
+                                time.sleep(1)
+                                print("and everything blows up")
+                                exit()
+                            else:
+                                    tries_carpet -= 1
+                                    print(f"You have {tries_carpet} left to input the code correctly")
+                                    if tries_carpet == 0:
+                                        print("A deep voice answers the phone...")
+                                        time.sleep(1)
+                                        print("\"You have used all three tries to input the code correctly\"")
+                                        time.sleep(2)
+                                        print("\"You have FAILED!!\"")
+                                        exit()
+                    elif code_in_phone_carpet == "no" or code_in_phone_carpet == "n":
+                        print("")
+                        break
+                    else:
+                        print("No, answer is not one of the options")
+            elif enter_code_question_carpet == "no" or enter_code_question_carpet == "n":
                 print("")
-                # send back to choice
+                break
             else:
                 print("No, answer is not one of the options")
-                # send back to code_in_phone_carpet
-        elif enter_code_question_carpet == "no" or enter_code_question_carpet == "n":
-            print("")
-            # send back up to choice
-        else:
-            print("No, answer is not one of the options")
-            # send back to enter-code_question_carpet
     elif choice == "bookshelf":
         print("You pick up one of the books titiled \"A Christmas Carol\"")
         time.sleep(1)
