@@ -588,21 +588,27 @@ while True:
         time.sleep(1)
         read_cc = input("Would you like to read it? [YES / NO] ").strip().lower()
         if read_cc == "yes" or read_cc == "y":
-            with open("christmas_carol.txt", "r") as book:
-                print(book.read())
-            while True:
-                done_reading_cc = input("Are you done reading? [YES / NO] ").strip().lower()
-                if done_reading_cc == "yes" or done_reading_cc == "y":
-                    time.sleep(1)
-                    clear_terminal()
-                    print("OH NO!")
-                    time.sleep(1)
-                    print("The rest of the book has been ripped out! Only STAVE ONE remains!")
-                    break
-                elif done_reading_cc == "no" or done_reading_cc == "n":
-                    print("Please, continue reading")
-                else:
-                    print("No, answer is not one of the options")
+            with open("projects/christmas_carol.txt", "r") as book:
+                lines = book.readlines()
+            chunk_size = 20
+            for i in range(0, len(lines), chunk_size):
+                chunk = "".join(lines[i:i + chunk_size])
+                time.sleep(1)
+                print(chunk)
+                while True:
+                    done_reading_cc = input("Are you done reading? [YES / NO] ").strip().lower()
+                    if done_reading_cc == "yes" or done_reading_cc == "y":
+                        time.sleep(1)
+                        clear_terminal()
+                        break
+                    elif done_reading_cc == "no" or done_reading_cc == "n":
+                        print("Please, continue reading")
+                    else:
+                        print("No, answer is not one of the options")
+            print("OH NO!")
+            time.sleep(1)
+            print("The rest of the book has been ripped out! Only STAVE ONE remains!")
+            break
 
         elif read_cc == "no" or read_cc == "n":
             print("You walk away from the book")
