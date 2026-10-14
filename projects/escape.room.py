@@ -50,13 +50,15 @@ def clear_terminal():
 
 codes = ["2356", "9990", "8031", "6574", "8383", "3333", "6753", "6994", "9393", "676767676767"]
 
-codes_bookshelf = ["24022"]
+codes_bookshelf = "24022"
 
 coins_codes = ["7151", "5890", "3373", "1643"]
 
-carpet_codes = ["200601", "288060", "356083", "555556", "676767"]
+carpet_codes = ["200601", "288060", "356083", "555556"]
 
-self_destruct_code_paper = ["1001"]
+self_destruct_code_paper = "1001"
+
+tries = 3
 
 clear_terminal()
 
@@ -69,7 +71,7 @@ time.sleep(1)
 
 clear_terminal()
 
-print("You are in a room, this room is mostly bare exept for a old rotary phone where you will enter the code to escape")
+print("You are in a room, this room is mostly bare except for a old rotary phone where you will enter the code to escape")
 
 time.sleep(4)
 
@@ -1007,66 +1009,80 @@ while True:
             print("No, answer is not one of the options")
             # send back to enter-code_question_paper
     elif choice == "phone":
-        enter_code_question = input("Would you like to enter a code into the phone? [YES / NO] ").lower().strip()
-        if enter_code_question == "yes" or enter_code_question == "y":
-            code_in_phone = input("Are you sure you want to enter a code into the phone? [YES / NO] ").lower().strip()
-            if code_in_phone == "yes" or code_in_phone == "y":
-                print("Okay if your sure...")
-                clear_terminal()
-                tries = 3
-                enter_code = input("Enter the code to escape, you have three tries: ")
-                if enter_code in codes or enter_code in codes_bookshelf or enter_code in carpet_codes or enter_code in coins_codes:
-                    print("The phone begins to ring and you pick it up, a light and airy voice speaks:")
-                    time.sleep(2)
-                    print("\"You have entered the correct code to escape, congradulations!\"")
-                    time.sleep(4)
-                    print("Confetti goes everywhere :)")
-                    time.sleep(2)
-                    clear_terminal()
-                    print("GOOD JOB")
-                    exit()
-                elif enter_code not in codes or enter_code not in codes_bookshelf or enter_code not in carpet_codes or enter_code not in coins_codes:
-                        tries -= 1
-                        print(f"You have {tries} left to input the code correctly")
-                        # end back to enter_code
-                        if tries == 0:
-                            print("A deep voice answers the phone...")
-                            time.sleep(1)
-                            print("\"You have used all three tries to input the code correctly\"")
-                            time.sleep(2)
-                            print("\"You have FAILED!!\"")
-                            exit()
-                elif enter_code in self_destruct_code_paper:
-                        print("The phone begins to ring and you pick it up, a deep voice speaks:")
-                        time.sleep(1)
-                        print("\"You have entered the self destruct code, now iniciating...\"")
-                        time.sleep(1)
-                        print("Three...")
-                        time.sleep(1)
-                        print("Two...")
-                        time.sleep(1)
-                        print("One...")
-                        time.sleep(3)
+        while True: 
+            enter_code_question = input("Would you like to enter a code into the phone? [YES / NO] ").lower().strip()
+            if enter_code_question == "yes" or enter_code_question == "y":
+                
+                while True: 
+                    code_in_phone = input("Are you sure you want to enter a code into the phone? [YES / NO] ").lower().strip()
+                    if code_in_phone == "yes" or code_in_phone == "y":
+                        print("Okay if you're sure...")
                         clear_terminal()
-                        print("You have failed the escape room,")
-                        time.sleep(1)
-                        print("and everything blows up")
-                        exit()
-                else:
-                    print("No, answer is not one of the options")
-                    # send to enter_code
-            elif code_in_phone == "no" or code_in_phone == "n":
-                print("")
-                # send back to choice
+                        while True: 
+                            enter_code = input(f"Enter the code to escape, you have {tries} tries: ").lower().strip()
+                            if enter_code in codes or enter_code in codes_bookshelf or enter_code in carpet_codes or enter_code in coins_codes:
+                                print("The phone begins to ring and you pick it up, a light and airy voice speaks:")
+                                time.sleep(2)
+                                print("\"You have entered the correct code to escape, congratulations!\"")
+                                time.sleep(4)
+                                print("Confetti goes everywhere :)")
+                                time.sleep(2)
+                                clear_terminal()
+                                print("GOOD JOB")
+                                exit()
+                            elif enter_code in self_destruct_code_paper:
+                                print("The phone begins to ring and you pick it up, a deep voice speaks:")
+                                time.sleep(1)
+                                print("\"You have entered the self destruct code, now initiating...\"")
+                                time.sleep(1)
+                                print("Three...")
+                                time.sleep(1)
+                                print("Two...")
+                                time.sleep(1)
+                                print("One...")
+                                time.sleep(3)
+                                clear_terminal()
+                                print("You have failed the escape room,")
+                                time.sleep(1)
+                                print("and everything blows up")
+                                exit()
+                            else:
+                                tries -= 1
+                                print(f"You have {tries} left to input the code correctly")
+                                if tries == 0:
+                                    print("A deep voice answers the phone...")
+                                    time.sleep(1)
+                                    print("\"You have used all three tries to input the code correctly\"")
+                                    time.sleep(2)
+                                    print("\"You have FAILED!!\"")
+                                    exit()
+                                elif tries == 2:
+                                    hint_frist = input("Do you want a hint? [YES / NO] ").lower().strip()
+                                    if hint_frist == "yes" or hint_frist == "y":
+                                        print("Check the papers!")
+                                    elif hint_frist == "no" or hint_frist == "n":
+                                        break
+                                    else:
+                                        print("No, answer is not one of the options")
+                                elif tries == 1:
+                                    hint = input("Do you want a hint? [YES / NO] ").lower().strip()
+                                    if hint == "yes" or hint == "y":
+                                        print("Check the book!")
+                                    elif hint == "no" or hint == "n":
+                                        break
+                                    else:
+                                        print("No, answer is not one of the options")
+                                else:
+                                    print("tries is not working")
+                    elif code_in_phone == "no" or code_in_phone == "n":
+                        print("You step away from the phone")
+                    else:
+                        print("No, answer is not one of the options")
+            elif enter_code_question == "no" or enter_code_question == "n":
+                print("You step away from the phone")
+                break
             else:
                 print("No, answer is not one of the options")
-                # send back to code_in_phone
-        elif enter_code_question == "no" or enter_code_question == "n":
-            print("")
-            # send back up to choice
-        else:
-            print("No, answer is not one of the options")
-            # send back to enter-code_question
     else:
         print("You sit there within the room, pondering your existance before getting back up and deciding that you have to do something")
         # send back to choice
